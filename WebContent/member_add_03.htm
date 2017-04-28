@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript" src="js/member_add_03.js"></script>
+	<script type="text/javascript" src="jquery/jquery.metadata.js"></script>
+	<script type="text/javascript" src="jquery/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="jquery/Message_zh_CN.js"></script>
+	<script type="text/javascript" src="jquery/additional-methods.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form action="welcome.htm" method="post" class="form-horizontal" id="myform">
+					<fieldset>
+						<legend>
+							<label>创建新用户</label>
+						</legend>
+						<div class="form-group" id="midDiv">
+							<label class="col-md-2 control-label" for="name">用户名：</label>
+							<div class="col-md-5">
+								<input type="text" id="mid" name="mid" class="form-control">
+							</div>
+							<span class="col-md-5" id="midSpan">*</span>
+						</div>
+						<div class="form-group" id="nameDiv">
+							<label class="col-md-2 control-label" for="name">姓名：</label>
+							<div class="col-md-5">
+								<input type="text" id="name" name="name" class="form-control">
+							</div>
+							<span class="col-md-5" id="nameSpan">*</span>
+						</div>
+						<div class="form-group" id="phoneDiv">
+							<label class="col-md-2 control-label" for="name">电话：</label>
+							<div class="col-md-5">
+								<input type="text" id="phone" name="phone" class="form-control">
+							</div>
+							<span class="col-md-5" id="phoneSpan">*</span>
+						</div>
+						<div class="form-group" id="passwordDiv">
+							<label class="col-md-2 control-label" for="name">登录密码：</label>
+							<div class="col-md-5">
+								<input type="password" id="password" name="password" class="form-control">
+							</div>
+							<span class="col-md-5" id="passwordSpan">*</span>
+						</div>
+						<div class="form-group" id="confDiv">
+							<label class="col-md-2 control-label" for="name">确认密码：</label>
+							<div class="col-md-5">
+								<input type="password" id="conf" name="conf" class="form-control">
+							</div>
+							<span class="col-md-5" id="confSpan">*</span>
+						</div>
+						<div class="form-group" id="sexDiv">
+							<label class="col-md-2 control-label" for="name">性别：</label>
+							<div class="col-md-5">
+								<div class="radio-inline">
+									<label><input type="radio" id="sex" name="sex" value="男">男</label>
+								</div>
+								<div class="radio-inline">
+									<label><input type="radio" id="sex" name="sex" value="女">女</label>
+								</div>
+							</div>
+							<span class="col-md-5" id="sexSpan">*</span>
+						</div>
+						<div class="form-group" id="instDiv">
+							<label class="col-md-2 control-label" for="name">兴趣：</label>
+							<div class="col-md-5">
+								<div class="checkbox-inline">
+									<label><input type="checkbox" id="inst" name="inst" value="唱歌">唱歌</label>
+								</div>
+								<div class="checkbox-inline">
+									<label><input type="checkbox" id="inst" name="inst" value="跳舞">跳舞</label>
+								</div>
+								<div class="checkbox-inline">
+									<label><input type="checkbox" id="inst" name="inst" value="看书">看书</label>
+								</div>
+							</div>
+							<span class="col-md-5" id="instSpan">*</span>
+						</div>
+						<div class="form-group" id="cityDiv">
+							<label class="col-md-2 control-label" for="name">城市：</label>
+							<div class="col-md-5">
+								<select id="city" name="city" class="form-control">
+									<option value="">===== 请选择所在城市 =====</option>
+									<option value="BJ">北京</option>
+								</select>
+							</div>
+							<span class="col-md-5" id="citySpan">*</span>
+						</div>
+						<div class="form-group" id="photoDiv">
+							<label class="col-md-2 control-label" for="photo">照片：</label>
+							<div class="col-md-5">
+								<input type="file" id="photo" name="photo" class="form-control">
+							</div>
+							<span class="col-md-5" id="photoSpan">*</span>
+						</div>
+						<div class="form-group" id="noteDiv">
+							<label class="col-md-2 control-label" for="note">个人简介：</label>
+							<div class="col-md-5">
+								<textarea id="note" name="note" class="form-control"></textarea>
+							</div>
+							<span class="col-md-5" id="noteSpan">*</span>
+						</div>
+						<div class="form-group">
+							<div class="col-md-3 col-md-offset-3">
+								<input type="submit" value="提交" class="btn btn-primary">
+								<input type="reset" value="重置" class="btn btn-warning">
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
